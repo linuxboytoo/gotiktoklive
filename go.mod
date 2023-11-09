@@ -1,4 +1,4 @@
-module github.com/Davincible/gotiktoklive
+module github.com/linuxboytoo/gotiktoklive
 
 go 1.17
 
