@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/Davincible/gotiktoklive?status.svg)](https://godoc.org/github.com/Davincible/gotiktoklive) [![Go Report Card](https://goreportcard.com/badge/github.com/Davincible/gotiktoklive)](https://goreportcard.com/report/github.com/Davincible/gotiktoklive)
+[![GoDoc](https://godoc.org/github.com/linuxboytoo/gotiktoklive?status.svg)](https://godoc.org/github.com/linuxboytoo/gotiktoklive) [![Go Report Card](https://goreportcard.com/badge/github.com/linuxboytoo/gotiktoklive)](https://goreportcard.com/report/github.com/linuxboytoo/gotiktoklive)
 
 # GoTikTokLive
 
@@ -25,7 +25,7 @@ Go rewrite of [zerodytrash/TikTok-Livestream-Chat-Connector](https://github.com/
 1. Install the package using the Go package manager
 
 ```sh
-go get github.com/Davincible/gotiktoklive
+go get github.com/linuxboytoo/gotiktoklive
 ```
 
 2. Create your first chat connection
@@ -385,4 +385,4 @@ tiktok.SetErrorHandler(func(err error) {
 
 ## Contributing
 
-Your improvements are welcome! Feel free to open an <a href="https://github.com/Davincible/gotiktoklive/issues">issue</a> or <a href="https://github.com/Davincible/gotiktoklive/pulls">pull request</a>.
+Your improvements are welcome! Feel free to open an <a href="https://github.com/linuxboytoo/gotiktoklive/issues">issue</a> or <a href="https://github.com/linuxboytoo/gotiktoklive/pulls">pull request</a>.

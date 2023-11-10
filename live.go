@@ -15,7 +15,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 
-	pb "github.com/Davincible/gotiktoklive/proto"
+	pb "github.com/linuxboytoo/gotiktoklive/proto"
 
 	"google.golang.org/protobuf/proto"
 )
@@ -100,7 +100,8 @@ func (l *Live) fetchRoom() error {
 }
 
 // GetRoomInfo will only fetch the room info, normally available with live.Info
-//  but not start tracking a live stream.
+//
+//	but not start tracking a live stream.
 func (t *TikTok) GetRoomInfo(username string) (*RoomInfo, error) {
 	id, err := t.getRoomID(username)
 	if err != nil {
@@ -121,7 +122,9 @@ func (t *TikTok) GetRoomInfo(username string) (*RoomInfo, error) {
 
 // TrackUser will start to track the livestream of a user, if live.
 // To listen to events emitted by the livestream, such as comments and viewer
-//  count, listen to the Live.Events channel.
+//
+//	count, listen to the Live.Events channel.
+//
 // It will start a go routine and connect to the tiktok websocket.
 func (t *TikTok) TrackUser(username string) (*Live, error) {
 	id, err := t.getRoomID(username)
@@ -300,7 +303,9 @@ func (l *Live) startPolling() {
 // DownloadStream will download the stream to an .mkv file.
 //
 // A filename can be optionally provided as an argument, if not provided one
-//  will be generated, with the stream start time in the format of 2022y05m25dT13h03m16s.
+//
+//	will be generated, with the stream start time in the format of 2022y05m25dT13h03m16s.
+//
 // The stream start time can be found in Live.Info.CreateTime as epoch seconds.
 func (l *Live) DownloadStream(file ...string) error {
 	// Check if ffmpeg is installed
